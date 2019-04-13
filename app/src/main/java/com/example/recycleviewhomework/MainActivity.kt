@@ -7,14 +7,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     companion object {
-       lateinit var result: ArrayList<Employe>
+        lateinit var result: ArrayList<Employe>
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var adapter : EmplyeAdapter? = null
-        var empList : ArrayList<Employe>
+        var adapter: EmplyeAdapter? = null
+        var empList: ArrayList<Employe>
 
         empList = generateEmployeeData()
         adapter = EmplyeAdapter(this, empList)
@@ -22,11 +23,12 @@ class MainActivity : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         rv_emp.setLayoutManager(layoutManager)
 
-        rv_emp.adapter =adapter
+        rv_emp.adapter = adapter
     }
 
+
     private fun generateEmployeeData(): ArrayList<Employe> {
-       result  = ArrayList<Employe>()
+        result = ArrayList<Employe>()
 
         var emp: Employe = Employe()
         emp.emp_id = 1

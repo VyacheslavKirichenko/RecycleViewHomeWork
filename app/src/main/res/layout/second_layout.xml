@@ -7,12 +7,12 @@
     <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/img_emp" />
+            android:id="@+id/image_fotoDetail_laout" />
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/rl_content"
-            android:layout_toRightOf="@+id/img_emp"
+            android:layout_toRightOf="@+id/image_fotoDetail_laout"
             android:layout_marginLeft="10dp"
     >
 
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#C0C0C0"
-            android:layout_below="@+id/img_emp"
+            android:layout_below="@+id/image_fotoDetail_laout"
             android:layout_marginTop="10dp"
     ></RelativeLayout>
 </RelativeLayout>
